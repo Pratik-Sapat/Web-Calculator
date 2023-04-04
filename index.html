@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+
+    <title>MathWorld</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+    
+        <div class="text-center bg-danger pb-2 pt-2">
+            <p class="h1" style="font-family:cursive">MATHMATICS WORLD</p>
+        </div>
+        <div style="background-color: rgb(6, 6, 179);">
+            <ul class="dropdown dropstart nav-item float-end  my-3 " >
+                <button class="btn btn-danger dropdown-toggle " data-bs-toggle="dropdown" style="margin-right: 5px;">Tasks</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#firstSection" class="dropdown-item">Even/ODD/Prime</a></li>
+                    <li><a href="#secondSection" class="dropdown-item">Add/Sub/Div/Mul</a></li>
+                    <li><a href="#thirdSection" class="dropdown-item">Factorial</a></li>
+                </ul>
+            </ul>   
+            <ul class="nav  py-3">
+                
+                <li class="nav-item "><a href="#" class="nav-link text-light ">Home</a></li>
+                <li class="nav-item "><a href="#" class="nav-link text-light ">About</a></li>
+                <li class="nav-item "><a href="#" class="nav-link text-light ">Contact US</a></li>
+            </ul>
+        </div>
+        <!-- -------------------------------------------------------Block-1 Start even odd and prime------------------------------------------ -->
+        <div class="text-center bg-info pb-5"  id="firstSection">
+            <!-- input Buttton on even odd and prime -->
+            <input type="text" id="input" class="pb-4 pt-4 text-center mt-5" placeholder="Enter Value">
+            
+            <br>
+            <!-- Result Banner -->
+            <button class="btn btn-lg bg-light text-dark btn-outline-success mt-3" id="value" style="width: 320px;height: 80px;">Result</button>
+            <br>
+            <!-- even odd primme button -->
+            <div>
+                <button class="btn btn-primary mt-5" onclick="even()">Check Even</button>
+                <button class="btn btn-primary mt-5" onclick="odd()">Check ODD</button>
+                <button class="btn btn-primary mt-5" onclick="prime()">Check Prime</button>
+            </div>
+        </div>
+        
+        <!-- --------------------------------------------------------End Of Block-1------------------------------------------------------- -->
+
+        <!-- -------------------------------------------Block-2 Start sum,sub,mul and div----------------------------------------------------->
+        <div class="text-center bg-warning pb-4" id="secondSection">
+            <input type="text" id="a" class="pb-3 pt-3 text-center mt-5" placeholder="Value1">
+            <input type="text" id="b" class="pb-3 pt-3 text-center mt-5" placeholder="Value2">
+            <br>
+            <button class="btn btn-lg btn-outline-success text-dark text-center bg-light my-4" id="result" style="width: 320px; height: 80px;">Result</button>
+
+            <div>
+                <button class="btn btn-primary mx-4 px-3" onclick="add()">Addition</button>
+                <button class="btn btn-primary mx-4 px-3" onclick="sub()">Substraction</button>
+                <br>
+                <button class="btn btn-primary mx-4 my-3 px-3" onclick="div()">Division</button>
+                <button class="btn btn-primary mx-4 my-3" onclick="mul()">Multiplication</button>
+                
+            </div>
+        </div>
+
+        <!-- -------------------------------------------------------End Of Block-2----------------------------------------------------------- -->
+
+        <!-- -------------------------------------------------Block-3 Start------------------------------------------------------------------ -->
+
+        <div class="text-center bg-secondary pb-4" id="thirdSection">
+            <input type="text" class="pb-3 pt-3 text-center mt-5" id="input3" placeholder="Enter Number">
+            <br>
+            <div>
+                <button class="h6 text-center my-3 mx-2 btn bg-light "  id="fact" style="width: 320px; height: 80px;">
+                    Result
+                </button>
+                <br>
+                <button class="btn btn-primary  text-center my-3 mx-2 px-4 py-3"  onclick="table()">
+                   Factorial
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./math.js"></script>
+
+</body>
+
+</html>
